@@ -5,6 +5,7 @@ import AutomateSvg from "../../public/Automate.svg";
 import IntegrateSvg from "../../public/Integrate.svg";
 import ManageSvg from "../../public/Manage.svg";
 import SignUpSvg from "../../public/SignUp.svg";
+import BackgroundWavesSvg from "../../public/BackgroundWaves.svg";
 
 export default function MainContent() {
   return (
@@ -87,9 +88,11 @@ export default function MainContent() {
         </div>
       </section>
 
-      <section className="mt-36 flex w-screen items-center justify-center bg-yellow-300">
-        <div className="grid grid-cols-2 justify-items-center gap-10 bg-purple-300 px-24">
-          <div className="flex flex-col items-center bg-green-300">
+      {/* TODO  */}
+      {/* Color gradient ir kkads pisax kas negrib darboties ka figmas dizaina :/ */}
+      <section className="mt-36 flex w-screen items-center justify-center">
+        <div className="grid grid-cols-2 justify-items-center gap-32 px-24">
+          <div className="flex flex-col items-center bg-gradient-to-b from-[#091046] via-[#138447] via-[44%]">
             <h3 className="mt-10 text-4xl font-bold">Robust Customer</h3>
             <span className="mt-4 text-5xl font-bold text-[#83FF48]">
               Support
@@ -99,7 +102,7 @@ export default function MainContent() {
               enhancing your customer service
             </p>
           </div>
-          <div className="flex flex-col items-center bg-green-300">
+          <div className="via-44% flex flex-col items-center bg-gradient-to-b from-[#091046] via-[#F2E255]">
             <h3 className="mt-10 text-4xl font-bold">Advanced Lead</h3>
             <span className="mt-4 text-5xl font-bold text-[#F2E355]">
               Capture
@@ -109,7 +112,7 @@ export default function MainContent() {
               chatbot technology
             </p>
           </div>
-          <div className="flex flex-col items-center bg-green-300">
+          <div className="via-44% flex flex-col items-center bg-gradient-to-b from-[#091046] via-[#FF8A00]">
             <h3 className="mt-10 text-4xl font-bold">Seamless CRM</h3>
             <span className="mt-4 text-5xl font-bold text-[#FF8A00]">
               Integration
@@ -119,7 +122,7 @@ export default function MainContent() {
               customer management experience
             </p>
           </div>
-          <div className="flex flex-col items-center bg-green-300">
+          <div className="via-44% flex flex-col items-center bg-gradient-to-b from-[#091046] via-[#DD35F9]">
             <h3 className="mt-10 text-4xl font-bold">Intuitive User</h3>
             <span className="mt-4 text-5xl font-bold text-[#E440FF]">
               Interface
@@ -129,6 +132,41 @@ export default function MainContent() {
               customer management experience
             </p>
           </div>
+        </div>
+      </section>
+
+      <section className="mt-36 w-screen">
+        <Image
+          src={BackgroundWavesSvg}
+          width={1940}
+          height={877}
+          alt=""
+          className="absolute"
+        />
+        <div className="flex justify-center">
+          <h2 className="text-6xl font-semibold">
+            Flexible Pricing to Suit Your{" "}
+            <span className="text-[#FFEE58]">Needs</span>
+          </h2>
+        </div>
+
+        <div>
+          <Image />
+          <h3>Basic</h3>
+          <p>Limited lead capture Basic CRM integration Email support.</p>
+          <button></button>
+        </div>
+        <div>
+          <Image />
+          <h3>Standard</h3>
+          <p>Advanced lead Capture Full CRM integration Priority support</p>
+          <button></button>
+        </div>
+        <div>
+          <Image />
+          <h3>Premium</h3>
+          <p>All features Dedicated support Custom solutions</p>
+          <button></button>
         </div>
       </section>
     </main>
