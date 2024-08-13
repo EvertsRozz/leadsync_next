@@ -1,32 +1,23 @@
 import Image from "next/image";
-import BackgroundSymbolsSvg from "../../public/BackgroundSymbols.svg";
 import BrowserSvg from "../../public/Browser.svg";
 import AutomateSvg from "../../public/Automate.svg";
 import IntegrateSvg from "../../public/Integrate.svg";
 import ManageSvg from "../../public/Manage.svg";
 import SignUpSvg from "../../public/SignUp.svg";
-import BackgroundWavesSvg from "../../public/BackgroundWaves.svg";
+import BasicSvg from "../../public/Basic.svg";
+import StandardSvg from "../../public/Standard.svg";
+import PremiumSvg from "../../public/Premium.svg";
 
 export default function MainContent() {
   return (
     <main className="bg-black">
       <section className="mt-12 h-fit w-screen">
-        <div className="absolute w-screen">
-          <Image
-            src={BackgroundSymbolsSvg}
-            width={1251}
-            height={616}
-            alt=""
-            className="mx-auto min-h-[616px] min-w-[1251px]"
-          />
-        </div>
-
-        <div className="flex flex-col items-center pt-12">
+        <div className="flex flex-col items-center bg-[url('/BackgroundSymbols.svg')] bg-center bg-no-repeat pt-12">
           <h1 className="z-50 mb-6 max-w-[809px] text-center text-6xl font-extrabold text-white">
             Synchronise <span className="text-[#4FFF57]">Success</span> with
             Intelligent Automation
           </h1>
-          <p className="z-50 mb-6 max-w-[531px] text-center text-[25px] font-medium">
+          <p className="`max-w-[531px] z-50 mb-6 text-center text-[25px] font-medium">
             Streamline lead capture, CRM integration, and customer support with
             LeadSync
           </p>
@@ -40,7 +31,7 @@ export default function MainContent() {
         </div>
       </section>
 
-      <section className="mt-24 w-screen">
+      <section className="mt-36 w-screen">
         <div className="flex justify-center">
           <h2 className="text-6xl font-semibold">
             How <span className="text-[#65CCF8]">LeadSync</span> works
@@ -91,8 +82,8 @@ export default function MainContent() {
       {/* TODO  */}
       {/* Color gradient ir kkads pisax kas negrib darboties ka figmas dizaina :/ */}
       <section className="mt-36 flex w-screen items-center justify-center">
-        <div className="grid grid-cols-2 justify-items-center gap-32 px-24">
-          <div className="flex flex-col items-center bg-gradient-to-b from-[#091046] via-[#138447] via-[44%]">
+        <div className="grid grid-cols-2 place-items-end justify-items-center gap-20 px-24">
+          <div className="mx-10 flex flex-col items-center bg-gradient-to-b from-transparent to-[#138447] py-10">
             <h3 className="mt-10 text-4xl font-bold">Robust Customer</h3>
             <span className="mt-4 text-5xl font-bold text-[#83FF48]">
               Support
@@ -102,7 +93,7 @@ export default function MainContent() {
               enhancing your customer service
             </p>
           </div>
-          <div className="via-44% flex flex-col items-center bg-gradient-to-b from-[#091046] via-[#F2E255]">
+          <div className="mx-10 flex flex-col items-center bg-gradient-to-b from-transparent to-[#F2E255] py-10">
             <h3 className="mt-10 text-4xl font-bold">Advanced Lead</h3>
             <span className="mt-4 text-5xl font-bold text-[#F2E355]">
               Capture
@@ -112,7 +103,7 @@ export default function MainContent() {
               chatbot technology
             </p>
           </div>
-          <div className="via-44% flex flex-col items-center bg-gradient-to-b from-[#091046] via-[#FF8A00]">
+          <div className="mx-10 flex flex-col items-center bg-gradient-to-b from-transparent to-[#FF8A00] py-10">
             <h3 className="mt-10 text-4xl font-bold">Seamless CRM</h3>
             <span className="mt-4 text-5xl font-bold text-[#FF8A00]">
               Integration
@@ -122,7 +113,7 @@ export default function MainContent() {
               customer management experience
             </p>
           </div>
-          <div className="via-44% flex flex-col items-center bg-gradient-to-b from-[#091046] via-[#DD35F9]">
+          <div className="mx-10 flex flex-col items-center bg-gradient-to-b from-transparent to-[#DD35F9] py-10">
             <h3 className="mt-10 text-4xl font-bold">Intuitive User</h3>
             <span className="mt-4 text-5xl font-bold text-[#E440FF]">
               Interface
@@ -135,39 +126,70 @@ export default function MainContent() {
         </div>
       </section>
 
+      {/* this section seems to have changed since yesterday */}
       <section className="mt-36 w-screen">
-        <Image
-          src={BackgroundWavesSvg}
-          width={1940}
-          height={877}
-          alt=""
-          className="absolute"
-        />
-        <div className="flex justify-center">
-          <h2 className="text-6xl font-semibold">
-            Flexible Pricing to Suit Your{" "}
-            <span className="text-[#FFEE58]">Needs</span>
-          </h2>
-        </div>
+        <div className="flex w-screen flex-col items-center bg-[url('/BackgroundWaves.svg')] bg-cover">
+          <div className="flex justify-center">
+            <h2 className="text-6xl font-semibold">
+              Flexible Pricing to Suit Your{" "}
+              <span className="text-[#FFEE58]">Needs</span>
+            </h2>
+          </div>
 
-        <div>
-          <Image />
-          <h3>Basic</h3>
-          <p>Limited lead capture Basic CRM integration Email support.</p>
-          <button></button>
+          <div className="mx-48 mt-20 flex gap-10">
+            <div className="flex basis-1/3 flex-col items-center border border-solid border-white border-opacity-50 bg-black bg-opacity-40 py-12">
+              <Image src={BasicSvg} width={170} height={115} alt="" />
+              <h3 className="text-4xl font-medium">Basic</h3>
+              <p className="text-center text-xl font-normal">
+                Limited lead capture Basic CRM integration Email support.
+              </p>
+              <button type="button">Start Now</button>
+            </div>
+            <div className="flex basis-1/3 flex-col items-center border border-solid border-white border-opacity-50 bg-black bg-opacity-40 py-12">
+              <Image src={StandardSvg} width={170} height={115} alt="" />
+              <h3 className="text-4xl font-medium">Standard</h3>
+              <p className="text-center text-xl font-normal">
+                Advanced lead Capture Full CRM integration Priority support
+              </p>
+              <button type="button">Start Now</button>
+            </div>
+            <div className="flex basis-1/3 flex-col items-center border border-solid border-white border-opacity-50 bg-black bg-opacity-40 py-4">
+              <Image src={PremiumSvg} width={170} height={115} alt="" />
+              <h3 className="text-4xl font-medium">Premium</h3>
+              <p className="text-center text-xl font-normal">
+                All features Dedicated support Custom solutions
+              </p>
+              <button type="button">Start Now</button>
+            </div>
+          </div>
         </div>
-        <div>
-          <Image />
-          <h3>Standard</h3>
-          <p>Advanced lead Capture Full CRM integration Priority support</p>
-          <button></button>
+      </section>
+
+      <section className="mt-36 flex w-screen justify-center">
+        <div className="flex w-3/5 flex-col items-center justify-center border border-solid border-opacity-50 bg-[#293049] bg-opacity-45 px-32">
+          <h2 className="mt-12 text-6xl font-semibold">
+            About <span className="text-[#65CCF8]">LeadSync</span>
+          </h2>
+          <p className="mb-12 mt-6 text-center text-2xl font-light">
+            LeadSync is dedicated to synchronizing business success through
+            intelligent automation. Our mission is to enhance productivity and
+            customer satisfaction by providing a streamlined approach to lead
+            capture, CRM integration, and support management
+          </p>
         </div>
-        <div>
-          <Image />
-          <h3>Premium</h3>
-          <p>All features Dedicated support Custom solutions</p>
-          <button></button>
-        </div>
+      </section>
+
+      <section className="mt-36 flex w-screen flex-col items-center justify-center">
+        <h2 className="mb-12 text-6xl font-semibold">Get in Touch</h2>
+        <form action="">
+          <div className="">
+            <input type="text" placeholder="`Name" />
+            <input type="text" placeholder="Email" />
+          </div>
+          <div className="flex">
+            <input type="text" placeholder="Message" className="flex-grow" />
+          </div>
+        </form>
       </section>
     </main>
   );
