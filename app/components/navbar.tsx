@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="flex h-16 w-screen items-center justify-between bg-[#08243D] px-10">
-        <p className="text-2xl font-bold">LEADSYNC</p>
+        <p className="text-2xl font-bold">FUTURELEADS</p>
         <button
           onMouseDown={GetStartedBtn}
           className="rounded-[5px] border-2 border-solid border-white px-4 py-2 text-lg"
