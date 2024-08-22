@@ -10,7 +10,8 @@ import Step2Svg from "../../public/images/Step2.svg";
 import Step3Svg from "../../public/images/Step3.svg";
 import Step4Svg from "../../public/images/Step4.svg";
 import MBProSvg from "../../public/images/MBPro.svg";
-import BenefitsCard from "./BenefitsCard";
+import BenefitsCard from "./benefitsCard";
+import { Iprops } from "./customBtn";
 
 function MainContent() {
   const stepCardsParagraph = [
@@ -19,6 +20,11 @@ function MainContent() {
     "Our AI and team continuously analyze and refine your campaigns to maximize results.",
     "Experience effortless growth with our fully managed service driving your success.",
   ];
+
+  const btnProps: Iprops = {
+    customBtnText: "Click me!",
+    customBtnColorHex: "#007bff",
+  };
 
   return (
     <main className="bg-black">
@@ -33,8 +39,11 @@ function MainContent() {
             support with FutureLead’s fully managed automation.
           </p>
           <div className="mb-[72px] flex gap-9">
-            <CustomBtn text="Get Started" colorHex="0F6913" />
-            <CustomBtn text="Request a Demo" colorHex="A46F20" />
+            <CustomBtn customBtnText="Get Started" customBtnColorHex="0F6913" />
+            <CustomBtn
+              customBtnText="Request a Demo"
+              customBtnColorHex="A46F20"
+            />
           </div>
 
           {/* TODO */}
@@ -92,7 +101,63 @@ function MainContent() {
 
         <div className="grid grid-cols-2 place-items-end justify-items-center gap-20 px-24">
           {/* TODO */}
-          {/* setup the BeneiftsCard Components here 4x */}
+          {/* fix tailwind issues regarding bgColor */}
+          <BenefitsCard
+            preHeader={"Boost Your Sales"}
+            header={"Email Marketing Solutions"}
+            span={"Efficient and Effective"}
+            spanColor={"text-[#83FF48]"}
+            text={
+              "Our AI-driven platform ensures advanced email delivery, maximizing engagement through personalized timing and content."
+            }
+            bgColor={"via-[#138447]"}
+            btnProps={{
+              customBtnText: "Get Started",
+              customBtnColorHex: "0F6913",
+            }}
+          />
+          <BenefitsCard
+            preHeader={"Boost Your Productivity"}
+            header={"and Increase Efficiency"}
+            span={"Save Time"}
+            spanColor={"text-[#FF8A00        ]"}
+            text={
+              "Our AI-powered platform not only saves you time but also boosts efficiency with proactive automated follow-ups, ensuring no opportunity is missed."
+            }
+            bgColor={"todo-fix"}
+            btnProps={{
+              customBtnText: "Learn More",
+              customBtnColorHex: "FF8A00",
+            }}
+          />{" "}
+          <BenefitsCard
+            preHeader={"Efficiency"}
+            header={"Your Communication Process"}
+            span={"Streamline"}
+            spanColor={"text-[#F2E355]"}
+            text={
+              "Our platform streamlines communication with consistent, AI-optimized outreach, ensuring timely and relevant interactions that enhance response rates."
+            }
+            bgColor={"todo-fix"}
+            btnProps={{
+              customBtnText: "Learn More",
+              customBtnColorHex: "F2E255 ",
+            }}
+          />{" "}
+          <BenefitsCard
+            preHeader={"Unlock the Potential"}
+            header={"for Email Automation"}
+            span={"Powerful Tools"}
+            spanColor={"text-[#E440FF]"}
+            text={
+              "Leverage AI-powered email automation tools to not just automate, but strategically optimize your campaigns for superior results."
+            }
+            bgColor={"todo-fix"}
+            btnProps={{
+              customBtnText: "Get Started",
+              customBtnColorHex: "841349",
+            }}
+          />
         </div>
       </section>
 
