@@ -31,21 +31,25 @@ function PricingComponent() {
       </div>
       <div className="w-1/2">
         <PricingComponentPlan
-          PlanHeader="Starter Plan"
+          planBgColor="#4B6741"
+          planHeader="Starter Plan"
           postHeader="Perfect for small businesses and startups"
           headerParagraph="Get started quickly with a simplified setup and essential tools that grow with your business."
-          PlanBenefits={[
+          planBenefitsLeft={[
             "Email Campaign Management",
             "Data Analytics",
             "Simplified Setup",
             "Scalability",
             "Automated Follow-ups",
+          ]}
+          planBenefitsRight={[
             "Basic setup and execution",
             "Gain essential insigths",
             "Quick and easy onboarding",
             "Designed to grow your business",
             "Keep your audience engaged effortlessly",
           ]}
+          planBenefitsTextColor="#83FF48"
         />
       </div>
     </div>
