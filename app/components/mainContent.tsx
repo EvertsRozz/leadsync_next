@@ -1,7 +1,4 @@
 import Image from "next/image";
-import BasicSvg from "../../public/Basic.svg";
-import StandardSvg from "../../public/Standard.svg";
-import PremiumSvg from "../../public/Premium.svg";
 import CustomBtn from "./customBtn";
 import React from "react";
 import StepCard from "./stepCard";
@@ -11,7 +8,8 @@ import Step3Svg from "../../public/images/Step3.svg";
 import Step4Svg from "../../public/images/Step4.svg";
 import MBProSvg from "../../public/images/MBPro.svg";
 import BenefitsCard from "./benefitsCard";
-import { Iprops } from "./customBtn";
+import { I_customBtn } from "./customBtn";
+import PricingComponent from "./pricingComponent";
 
 function MainContent() {
   const stepCardsParagraph = [
@@ -21,7 +19,7 @@ function MainContent() {
     "Experience effortless growth with our fully managed service driving your success.",
   ];
 
-  const btnProps: Iprops = {
+  const btnProps: I_customBtn = {
     customBtnText: "Click me!",
     customBtnColorHex: "#007bff",
   };
@@ -99,7 +97,7 @@ function MainContent() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 place-items-end justify-items-center gap-20 px-24">
+        <div className="grid grid-cols-2 place-items-end justify-items-center gap-10 px-24">
           {/* TODO */}
           {/* fix tailwind issues regarding bgColor */}
           <BenefitsCard
@@ -110,7 +108,7 @@ function MainContent() {
             text={
               "Our AI-driven platform ensures advanced email delivery, maximizing engagement through personalized timing and content."
             }
-            bgColor={"via-[#138447]"}
+            bgColor={"to-[#138447]"}
             btnProps={{
               customBtnText: "Get Started",
               customBtnColorHex: "0F6913",
@@ -120,11 +118,11 @@ function MainContent() {
             preHeader={"Boost Your Productivity"}
             header={"and Increase Efficiency"}
             span={"Save Time"}
-            spanColor={"text-[#FF8A00        ]"}
+            spanColor={"text-[#FF8A00]"}
             text={
               "Our AI-powered platform not only saves you time but also boosts efficiency with proactive automated follow-ups, ensuring no opportunity is missed."
             }
-            bgColor={"todo-fix"}
+            bgColor={"via-[#FF8A00]"}
             btnProps={{
               customBtnText: "Learn More",
               customBtnColorHex: "FF8A00",
@@ -138,7 +136,7 @@ function MainContent() {
             text={
               "Our platform streamlines communication with consistent, AI-optimized outreach, ensuring timely and relevant interactions that enhance response rates."
             }
-            bgColor={"todo-fix"}
+            bgColor={"via-[#F2E255]"}
             btnProps={{
               customBtnText: "Learn More",
               customBtnColorHex: "F2E255 ",
@@ -152,7 +150,7 @@ function MainContent() {
             text={
               "Leverage AI-powered email automation tools to not just automate, but strategically optimize your campaigns for superior results."
             }
-            bgColor={"todo-fix"}
+            bgColor={"via-[#DD35F9]"}
             btnProps={{
               customBtnText: "Get Started",
               customBtnColorHex: "841349",
@@ -163,41 +161,15 @@ function MainContent() {
 
       {/* this section seems to have changed since yesterday */}
       <section className="mt-36 w-screen">
-        <div className="flex w-screen flex-col items-center bg-[url('/BackgroundWaves.svg')] bg-cover">
-          <div className="flex justify-center">
-            <h2 className="text-6xl font-semibold">
-              Flexible Pricing to Suit Your{" "}
-              <span className="text-[#FFEE58]">Needs</span>
-            </h2>
-          </div>
-
-          <div className="mx-48 mt-20 flex gap-10">
-            <div className="flex basis-1/3 flex-col items-center border border-solid border-white border-opacity-50 bg-black bg-opacity-40 py-12">
-              <Image src={BasicSvg} width={170} height={115} alt="" />
-              <h3 className="text-4xl font-medium">Basic</h3>
-              <p className="text-center text-xl font-normal">
-                Limited lead capture Basic CRM integration Email support.
-              </p>
-              <button type="button">Start Now</button>
-            </div>
-            <div className="flex basis-1/3 flex-col items-center border border-solid border-white border-opacity-50 bg-black bg-opacity-40 py-12">
-              <Image src={StandardSvg} width={170} height={115} alt="" />
-              <h3 className="text-4xl font-medium">Standard</h3>
-              <p className="text-center text-xl font-normal">
-                Advanced lead Capture Full CRM integration Priority support
-              </p>
-              <button type="button">Start Now</button>
-            </div>
-            <div className="flex basis-1/3 flex-col items-center border border-solid border-white border-opacity-50 bg-black bg-opacity-40 py-4">
-              <Image src={PremiumSvg} width={170} height={115} alt="" />
-              <h3 className="text-4xl font-medium">Premium</h3>
-              <p className="text-center text-xl font-normal">
-                All features Dedicated support Custom solutions
-              </p>
-              <button type="button">Start Now</button>
-            </div>
-          </div>
+        <div className="mb-20 flex flex-col justify-center px-24">
+          <p className="text-2xl font-semibold">Personalized</p>
+          <h2 className="my-8 text-5xl font-bold">Affordable Pricing</h2>
+          <p className="text-xl font-semibold text-[#797979]">
+            Our AI-driven email outreach service automates personalized email
+            campaigns to boost your sales.
+          </p>
         </div>
+        <PricingComponent />
       </section>
 
       <section className="mt-36 flex w-screen justify-center">

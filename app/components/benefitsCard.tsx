@@ -1,6 +1,6 @@
 import React from "react";
 import CustomBtn from "./customBtn";
-import { Iprops } from "./customBtn";
+import { I_customBtn } from "./customBtn";
 
 interface IBenefitsCardProps {
   preHeader: string;
@@ -9,26 +9,28 @@ interface IBenefitsCardProps {
   spanColor: string;
   text: string;
   bgColor: string;
-  btnProps: Iprops;
+  btnProps: I_customBtn;
 }
 
 function BenefitsCard(props: IBenefitsCardProps) {
   return (
     <div
-      className={`via-44% from-[#091046] ${props.bgColor} space-between flex flex-col`}
+      className={`via-44% from-transparent px-12 pb-8 ${props.bgColor} space-between flex h-full flex-col bg-gradient-to-b`}
     >
-      <p className="color-[#BABABA] mt-[72px] text-base font-medium">
+      <p className="color-[#BABABA] mb-4 mt-[72px] text-base font-medium">
         {props.preHeader}
       </p>
-      <h3 className="text-4xl font-bold">
+      <h3 className="mb-4 min-w-fit text-4xl font-bold">
         <span className={`${props.spanColor}`}>{props.span} </span>
         {props.header}
       </h3>
-      <p className="text-base font-medium">{props.text}</p>
-      <CustomBtn
-        customBtnText={props.btnProps.customBtnText}
-        customBtnColorHex={props.btnProps.customBtnColorHex}
-      />
+      <p className="mb-4 text-base font-medium">{props.text}</p>
+      <div className="flex w-fit">
+        <CustomBtn
+          customBtnText={props.btnProps.customBtnText}
+          customBtnColorHex={props.btnProps.customBtnColorHex}
+        />
+      </div>
     </div>
   );
 }

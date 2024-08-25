@@ -12,16 +12,17 @@
   - [x] Cust. color
 
 
-- [ ] Benefits Card Component:
-  - [ ] Cust. span color
-  - [ ] Cust. header
+- [?] Benefits Card Component:
+  - [x] Cust. span color
+  - [x] Cust. header
   - [ ] Cust. bg gradient
-  - [ ] CustomBtn Component
+  - [x] CustomBtn Component
 
 - [ ] Affordable Pricing components
   - [ ] Benefits Component:
     - [ ] Cust. header
     - [ ] Cust. text
+    - [ ] Cust. text position
 
   - [ ] Plan Component:
     - [ ] Cust. bg color
