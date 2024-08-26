@@ -8,7 +8,6 @@ import Step3Svg from "../../public/images/Step3.svg";
 import Step4Svg from "../../public/images/Step4.svg";
 import MBProSvg from "../../public/images/MBPro.svg";
 import BenefitsCard from "./benefitsCard";
-import { I_customBtn } from "./customBtn";
 import PricingComponent from "./pricingComponent";
 
 function MainContent() {
@@ -19,11 +18,77 @@ function MainContent() {
     "Experience effortless growth with our fully managed service driving your success.",
   ];
 
-  const btnProps: I_customBtn = {
-    customBtnText: "Click me!",
-    customBtnColorHex: "#007bff",
+  const benefitsData = [
+    {
+      preHeader: "Boost Your Sales",
+      header: "Email Marketing Solutions",
+      span: "Efficient and Effective",
+      spanColor: "text-[#83FF48]",
+      text: "Our AI-driven platform ensures advanced email delivery, maximizing engagement through personalized timing and content.",
+      bgColor: "to-[#138447]",
+      btnProps: {
+        customBtnText: "Get Started",
+        customBtnColorHex: "0F6913",
+      },
+    },
+    {
+      preHeader: "Boost Your Productivity",
+      header: "and Increase Efficiency",
+      span: "Save Time",
+      spanColor: "text-[#FF8A00]",
+      text: "Our AI-powered platform not only saves you time but also boosts efficiency with proactive automated follow-ups, ensuring no opportunity is missed.",
+      bgColor: "to-[#FF8A00]",
+      btnProps: {
+        customBtnText: "Learn More",
+        customBtnColorHex: "FF8A00",
+      },
+    },
+    {
+      preHeader: "Efficiency",
+      header: "Your Communication Process",
+      span: "Streamline",
+      spanColor: "text-[#F2E355]",
+      text: "Our platform streamlines communication with consistent, AI-optimized outreach, ensuring timely and relevant interactions that enhance response rates.",
+      bgColor: "to-[#F2E255]",
+      btnProps: {
+        customBtnText: "Learn More",
+        customBtnColorHex: "F2E255",
+      },
+    },
+    {
+      preHeader: "Unlock the Potential",
+      header: "for Email Automation",
+      span: "Powerful Tools",
+      spanColor: "text-[#E440FF]",
+      text: "Leverage AI-powered email automation tools to not just automate, but strategically optimize your campaigns for superior results.",
+      bgColor: "to-[#DD35F9]",
+      btnProps: {
+        customBtnText: "Get Started",
+        customBtnColorHex: "841349",
+      },
+    },
+  ];
+
+  const BenefitsSection = () => {
+    return (
+      <>
+        {benefitsData.map((benefit, index) => (
+          <BenefitsCard
+            key={index}
+            preHeader={benefit.preHeader}
+            header={benefit.header}
+            span={benefit.span}
+            spanColor={benefit.spanColor}
+            text={benefit.text}
+            bgColor={benefit.bgColor}
+            btnProps={benefit.btnProps}
+          />
+        ))}
+      </>
+    );
   };
 
+  // noinspection TypeScriptValidateTypes
   return (
     <main className="bg-black">
       <section className="mt-12 h-fit w-screen">
@@ -97,65 +162,8 @@ function MainContent() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 place-items-end justify-items-center gap-10 px-24">
-          {/* TODO */}
-          {/* fix tailwind issues regarding bgColor */}
-          <BenefitsCard
-            preHeader={"Boost Your Sales"}
-            header={"Email Marketing Solutions"}
-            span={"Efficient and Effective"}
-            spanColor={"text-[#83FF48]"}
-            text={
-              "Our AI-driven platform ensures advanced email delivery, maximizing engagement through personalized timing and content."
-            }
-            bgColor={"to-[#138447]"}
-            btnProps={{
-              customBtnText: "Get Started",
-              customBtnColorHex: "0F6913",
-            }}
-          />
-          <BenefitsCard
-            preHeader={"Boost Your Productivity"}
-            header={"and Increase Efficiency"}
-            span={"Save Time"}
-            spanColor={"text-[#FF8A00]"}
-            text={
-              "Our AI-powered platform not only saves you time but also boosts efficiency with proactive automated follow-ups, ensuring no opportunity is missed."
-            }
-            bgColor={"via-[#FF8A00]"}
-            btnProps={{
-              customBtnText: "Learn More",
-              customBtnColorHex: "FF8A00",
-            }}
-          />{" "}
-          <BenefitsCard
-            preHeader={"Efficiency"}
-            header={"Your Communication Process"}
-            span={"Streamline"}
-            spanColor={"text-[#F2E355]"}
-            text={
-              "Our platform streamlines communication with consistent, AI-optimized outreach, ensuring timely and relevant interactions that enhance response rates."
-            }
-            bgColor={"via-[#F2E255]"}
-            btnProps={{
-              customBtnText: "Learn More",
-              customBtnColorHex: "F2E255 ",
-            }}
-          />{" "}
-          <BenefitsCard
-            preHeader={"Unlock the Potential"}
-            header={"for Email Automation"}
-            span={"Powerful Tools"}
-            spanColor={"text-[#E440FF]"}
-            text={
-              "Leverage AI-powered email automation tools to not just automate, but strategically optimize your campaigns for superior results."
-            }
-            bgColor={"via-[#DD35F9]"}
-            btnProps={{
-              customBtnText: "Get Started",
-              customBtnColorHex: "841349",
-            }}
-          />
+        <div className="grid place-items-end justify-items-center px-24 sm:grid-cols-1 md:grid-cols-2 md:gap-10">
+          {BenefitsSection()}
         </div>
       </section>
 
@@ -198,6 +206,18 @@ function MainContent() {
             the power of effortless email marketing and customer relationship
             management with FutureLeads.
           </p>
+        </div>
+      </section>
+
+      <section className="mt-36 flex w-screen flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
+          <h2 className="stroke-[#6BD762] text-center text-5xl font-extrabold leading-relaxed">
+            <p className="">Automate Your Social </p>
+            <p>Media Outreach</p>
+          </h2>
+          <div className="mt-8 rounded-md border border-solid border-[#6BD762] px-10 py-7 text-4xl font-normal text-[#6BD762]">
+            COMING SOON
+          </div>
         </div>
       </section>
 

@@ -15,7 +15,7 @@ interface IBenefitsCardProps {
 function BenefitsCard(props: IBenefitsCardProps) {
   return (
     <div
-      className={`via-44% from-transparent px-12 pb-8 ${props.bgColor} space-between flex h-full flex-col bg-gradient-to-b`}
+      className={`from-transparent px-12 pb-8 ${props.bgColor} space-between flex h-full w-full flex-col bg-gradient-to-b`}
     >
       <p className="color-[#BABABA] mb-4 mt-[72px] text-base font-medium">
         {props.preHeader}

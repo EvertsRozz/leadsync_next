@@ -7,10 +7,11 @@ interface I_pricingComponentPlan {
   planBgColor: string;
   planHeader: string;
   postHeader: string;
-  headerParagraph: string;
+  headerParagraph?: string;
   planBenefitsLeft: string[];
   planBenefitsRight: string[];
   planBenefitsTextColor: string;
+  fullWidthBtnColor: string;
 }
 
 function PricingComponentPlan(props: I_pricingComponentPlan) {
@@ -62,7 +63,9 @@ function PricingComponentPlan(props: I_pricingComponentPlan) {
       <div className="border-b pb-3">
         <h4 className="text-2xl font-medium">{props.planHeader}</h4>
         <p className="text-xs font-normal">{props.postHeader}</p>
-        <p className="pt-3 text-sm font-normal">{props.headerParagraph}</p>
+        {props.headerParagraph ? (
+          <p className="pt-3 text-sm font-normal">{props.headerParagraph}</p>
+        ) : null}
       </div>
       <div className="mb-9 border-b">
         <p className="mt-10">Includes</p>
@@ -75,7 +78,7 @@ function PricingComponentPlan(props: I_pricingComponentPlan) {
       </div>
       <FullWidthBtn
         customBtnText="Request Pricing"
-        customBtnColorHex="4B6741"
+        customBtnColorHex={`${props.fullWidthBtnColor}`}
       />
     </div>
   );
