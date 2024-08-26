@@ -9,6 +9,7 @@ import Step4Svg from "../../public/images/Step4.svg";
 import MBProSvg from "../../public/images/MBPro.svg";
 import BenefitsCard from "./benefitsCard";
 import PricingComponent from "./pricingComponent";
+import FormComponent from "./formComponent";
 
 function MainContent() {
   const stepCardsParagraph = [
@@ -185,21 +186,21 @@ function MainContent() {
           <h2 className="mb-5 mt-12 text-6xl font-semibold">
             About <span className="text-[#65CCF8]">FutureLeads</span>
           </h2>
-          <p className="mb-12 text-center text-2xl font-normal tracking-widest">
+          <p className="mb-12 text-center text-2xl font-normal leading-loose tracking-widest">
             At FutureLeads, we specialize in transforming the way businesses
             manage their email outreach and customer engagement. Our fully
             managed platform combines cutting-edge AI with expert human
             oversight to deliver personalized, high-performing email campaigns
             and seamless CRM integration.
           </p>
-          <p className="mb-12 text-center text-2xl font-normal tracking-widest">
+          <p className="mb-12 text-center text-2xl font-normal leading-loose tracking-widest">
             We take care of everything—from building custom CRM systems tailored
             to your needs, to automating your outreach with precision and care.
             Our proactive approach ensures that your campaigns are continuously
             optimized for maximum impact, so you can focus on what you do best:
             growing your business.
           </p>
-          <p className="mb-12 text-center text-2xl font-normal tracking-widest">
+          <p className="mb-12 text-center text-2xl font-normal leading-loose tracking-widest">
             With FutureLeads, you&apos;re not just getting a tool; you&apos;re
             gaining a strategic partner dedicated to driving your success
             through intelligent automation and data-driven insights. Experience
@@ -221,7 +222,21 @@ function MainContent() {
         </div>
       </section>
 
-      <section className="mt-36 flex w-screen flex-col items-center justify-center"></section>
+      <section className="mt-36 flex w-screen flex-col items-center justify-center">
+        <div className="flex border border-solid border-white px-8 py-14">
+          <div className="basis-9/12">
+            <h4 className="text-4xl font-bold leading-loose">
+              Transforming Email Outreach with AI
+            </h4>
+            <p className="text-xl font-normal">
+              Experience the power of personalized email outreach
+            </p>
+          </div>
+          <div className="flex flex-col justify-center">
+            <FormComponent />
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
