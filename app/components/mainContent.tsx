@@ -10,6 +10,7 @@ import MBProSvg from "../../public/images/MBPro.svg";
 import BenefitsCard from "./benefitsCard";
 import PricingComponent from "./pricingComponent";
 import FormComponent from "./formComponent";
+import FooterComponent from "./footerComponent";
 
 function MainContent() {
   const stepCardsParagraph = [
@@ -236,6 +237,10 @@ function MainContent() {
             <FormComponent />
           </div>
         </div>
+      </section>
+
+      <section className="mt-36 flex w-screen flex-col items-center justify-center px-24">
+        <FooterComponent />
       </section>
     </main>
   );

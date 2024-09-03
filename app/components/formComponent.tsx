@@ -3,6 +3,10 @@
 import React from "react";
 
 export default function FormComponent() {
+  function SubmitBtn() {
+    return console.log("works");
+  }
+
   return (
     <>
       <form>
@@ -13,8 +17,9 @@ export default function FormComponent() {
             className="border border-solid bg-transparent px-5 py-5 text-sm font-normal placeholder:text-white"
           />
           <button
-            type="submit"
+            type="button"
             className="w-full rounded-md border border-solid border-white"
+            onMouseDown={SubmitBtn}
           >
             Sign Up
           </button>
