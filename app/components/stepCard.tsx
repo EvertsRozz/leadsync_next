@@ -8,8 +8,8 @@ function StepCard(props: {
   text: string;
 }) {
   return (
-    <div className="space-between flex basis-1/4 flex-col items-center gap-8 border border-solid border-white">
-      <div className="pt-8 md:h-[130px] md:w-[130px]">
+    <div className="space-between flex flex-col items-center gap-5 border border-solid border-white md:gap-8">
+      <div className="pt-8">
         <Image src={props.ImageSrc} alt="" width={130} height={130} />
       </div>
       <h3

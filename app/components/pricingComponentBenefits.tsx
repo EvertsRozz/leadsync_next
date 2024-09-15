@@ -14,7 +14,7 @@ export interface I_pricingComponentBenefits {
 
 function PricingComponentBenefits(props: I_pricingComponentBenefits) {
   return (
-    <div className="mb-10 flex">
+    <div className="mx-12 mb-10 flex md:mx-0">
       {props.textOrient === "left" ? (
         <Image
           src={TaskCheckSvg}

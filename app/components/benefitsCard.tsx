@@ -15,7 +15,7 @@ interface IBenefitsCardProps {
 function BenefitsCard(props: IBenefitsCardProps) {
   return (
     <div
-      className={`from-transparent px-12 pb-8 ${props.bgColor} space-between flex h-full w-full flex-col bg-gradient-to-b`}
+      className={`from-transparent px-8 pb-8 md:px-12 ${props.bgColor} space-between flex h-full w-full flex-col bg-gradient-to-b`}
     >
       <p className="color-[#BABABA] mb-4 mt-[72px] text-base font-medium">
         {props.preHeader}
@@ -25,7 +25,7 @@ function BenefitsCard(props: IBenefitsCardProps) {
         {props.header}
       </h3>
       <p className="mb-4 text-base font-medium">{props.text}</p>
-      <div className="flex w-fit">
+      <div className="flex w-fit text-nowrap">
         <CustomBtn
           customBtnText={props.btnProps.customBtnText}
           customBtnColorHex={props.btnProps.customBtnColorHex}

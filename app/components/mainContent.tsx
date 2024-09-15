@@ -14,7 +14,7 @@ import FooterComponent from "./footerComponent";
 
 function MainContent() {
   const stepCardsParagraph = [
-    "We build and integrate a robust CRM tailored to your needs—no setup required on your part.",
+    "We build and integrate a robust CRM tailored to your needs — no setup required on your part.",
     "We craft and automate targeted email campaigns that speak directly to your audience.",
     "Our AI and team continuously analyze and refine your campaigns to maximize results.",
     "Experience effortless growth with our fully managed service driving your success.",
@@ -92,18 +92,18 @@ function MainContent() {
 
   // noinspection TypeScriptValidateTypes
   return (
-    <main className="bg-black">
+    <main className="flex w-screen flex-col items-center justify-center bg-black">
       <section className="mt-12 h-fit w-screen">
         <div className="flex flex-col items-center bg-center bg-no-repeat pt-12">
-          <h1 className="mb-6 w-[50%] max-w-[809px] text-center text-6xl font-extrabold text-white">
+          <h1 className="mx-12 mb-6 text-center text-3xl font-extrabold tracking-wide text-white sm:mx-24 sm:text-4xl md:mx-48 md:text-5xl lg:mx-72 lg:text-6xl">
             Achieve Seamless <span className="text-[#4FFF57]">Success</span>{" "}
             with Intelligent Automation
           </h1>
-          <p className="mb-8 w-[50%] text-center text-[25px] font-medium">
+          <p className="mx-12 mb-8 text-center text-base font-medium sm:mx-24 sm:text-lg md:mx-48 md:text-xl lg:mx-72 lg:text-2xl">
             Effortlessly manage lead capture, CRM integration, and customer
             support with FutureLead’s fully managed automation.
           </p>
-          <div className="mb-[72px] flex gap-9">
+          <div className="mb-[72px] flex flex-grow gap-5 md:gap-8">
             <CustomBtn customBtnText="Get Started" customBtnColorHex="0F6913" />
             <CustomBtn
               customBtnText="Request a Demo"
@@ -113,18 +113,20 @@ function MainContent() {
 
           {/* TODO */}
           {/* Insert video ting later */}
-          <Image src={MBProSvg} width={1392} height={816} alt="" />
+          <div className="mx-12">
+            <Image src={MBProSvg} width={1392} height={816} alt="" />
+          </div>
         </div>
       </section>
 
       <section className="mt-36 w-screen">
         <div className="flex justify-center">
-          <h2 className="text-6xl font-semibold">
+          <h2 className="text-3xl font-semibold sm:text-6xl">
             How <span className="text-[#65CCF8]">FutureLeads</span> works
           </h2>
         </div>
 
-        <div className="mx-24 mt-24 flex h-fit flex-row gap-8">
+        <div className="mx-3 mt-10 grid h-fit grid-cols-2 gap-8 md:mx-24 md:mt-24 md:grid-flow-col md:grid-cols-1">
           <StepCard
             ImageSrc={Step1Svg}
             header="Step 1"
@@ -143,7 +145,6 @@ function MainContent() {
             headerColor="65CCF8"
             text={stepCardsParagraph[2]}
           />
-
           <StepCard
             ImageSrc={Step4Svg}
             header="Step 4"
@@ -154,9 +155,9 @@ function MainContent() {
       </section>
 
       <section className="mt-36 flex w-screen flex-col items-center justify-center">
-        <div className="mb-20 flex flex-col items-center justify-center">
+        <div className="mb-20 flex flex-col items-center justify-center px-12 text-center md:px-24">
           <p className="text-2xl font-semibold">Unlock the Power</p>
-          <h2 className="my-8 text-5xl font-bold">
+          <h2 className="my-5 text-5xl font-bold md:my-8">
             Automate Your Email Outreach
           </h2>
           <p className="text-xl font-semibold text-[#797979]">
@@ -164,16 +165,18 @@ function MainContent() {
           </p>
         </div>
 
-        <div className="grid place-items-end justify-items-center px-24 sm:grid-cols-1 md:grid-cols-2 md:gap-10">
+        <div className="grid place-items-end justify-items-center gap-2 sm:grid-cols-1 md:grid-cols-2 md:gap-10 md:px-24">
           {BenefitsSection()}
         </div>
       </section>
 
       {/* this section seems to have changed since yesterday */}
-      <section className="mt-36 w-screen">
-        <div className="mb-20 flex flex-col justify-center px-24">
+      <section className="mt-16 w-screen md:mt-32">
+        <div className="flex flex-col justify-center px-12 text-center md:mb-20 md:px-24">
           <p className="text-2xl font-semibold">Personalized</p>
-          <h2 className="my-8 text-5xl font-bold">Affordable Pricing</h2>
+          <h2 className="mb-5 mt-2 text-5xl font-bold md:my-8">
+            Affordable Pricing
+          </h2>
           <p className="text-xl font-semibold text-[#797979]">
             Our AI-driven email outreach service automates personalized email
             campaigns to boost your sales.
@@ -183,7 +186,7 @@ function MainContent() {
       </section>
 
       <section className="mt-36 flex w-screen justify-center">
-        <div className="mx-24 flex flex-col items-center justify-center border border-solid border-opacity-50 bg-transparent px-32">
+        <div className="flex flex-col items-center justify-center border border-solid border-opacity-50 bg-transparent md:mx-24 md:px-32">
           <h2 className="mb-5 mt-12 text-6xl font-semibold">
             About <span className="text-[#65CCF8]">FutureLeads</span>
           </h2>
@@ -224,7 +227,7 @@ function MainContent() {
       </section>
 
       <section className="mt-36 flex w-screen flex-col items-center justify-center">
-        <div className="flex border border-solid border-white px-8 py-14">
+        <div className="flex flex-col border border-solid border-white px-8 py-14 md:flex-row">
           <div className="basis-9/12">
             <h4 className="text-4xl font-bold leading-loose">
               Transforming Email Outreach with AI

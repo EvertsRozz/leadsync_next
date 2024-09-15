@@ -4,7 +4,7 @@ import PricingComponentPlan from "./pricingComponentPlan";
 
 function PricingComponent() {
   return (
-    <div className="mx-24 mt-24 grid grid-cols-2 gap-20">
+    <div className="mx-0 mt-2 grid grid-cols-1 gap-20 md:mx-24 md:mt-24 md:grid-cols-2">
       <div className="flex w-full flex-col justify-center">
         <PricingComponentBenefits
           span="Efficient"

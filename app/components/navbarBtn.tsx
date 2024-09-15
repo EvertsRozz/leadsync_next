@@ -9,7 +9,7 @@ export default function NavbarBtn() {
   return (
     <button
       type="button"
-      className={`max-h-[44px] rounded-lg bg-white p-2 text-lg font-medium text-black`}
+      className={`hidden max-h-[44px] rounded-lg bg-white p-2 text-lg font-medium text-black sm:block`}
       onMouseDown={GetStartedBtn}
     >
       Get Started
