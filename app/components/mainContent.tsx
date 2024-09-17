@@ -126,7 +126,7 @@ function MainContent() {
           </h2>
         </div>
 
-        <div className="mx-3 mt-10 grid h-fit grid-cols-2 gap-8 md:mx-24 md:mt-24 md:grid-flow-col md:grid-cols-1">
+        <div className="mx-12 mt-10 grid h-fit grid-cols-2 gap-8 md:mx-12 md:mt-24 md:flex">
           <StepCard
             ImageSrc={Step1Svg}
             header="Step 1"
@@ -186,25 +186,25 @@ function MainContent() {
       </section>
 
       <section className="mt-36 flex w-screen justify-center">
-        <div className="flex flex-col items-center justify-center border border-solid border-opacity-50 bg-transparent md:mx-24 md:px-32">
-          <h2 className="mb-5 mt-12 text-6xl font-semibold">
+        <div className="flex flex-col items-center justify-center border-opacity-50 bg-transparent px-5 sm:px-16 md:mx-24 md:border md:border-solid md:px-32">
+          <h2 className="mb-5 mt-12 text-3xl font-semibold sm:text-4xl md:text-5xl lg:text-6xl">
             About <span className="text-[#65CCF8]">FutureLeads</span>
           </h2>
-          <p className="mb-12 text-center text-2xl font-normal leading-loose tracking-widest">
+          <p className="mb-4 text-center text-base font-normal leading-loose tracking-widest sm:mb-6 sm:text-lg md:mb-8 md:text-xl lg:mb-12 lg:text-2xl">
             At FutureLeads, we specialize in transforming the way businesses
             manage their email outreach and customer engagement. Our fully
             managed platform combines cutting-edge AI with expert human
             oversight to deliver personalized, high-performing email campaigns
             and seamless CRM integration.
           </p>
-          <p className="mb-12 text-center text-2xl font-normal leading-loose tracking-widest">
+          <p className="mb-4 text-center text-base font-normal leading-loose tracking-widest sm:mb-6 sm:text-lg md:mb-8 md:text-lg lg:mb-12 lg:text-2xl">
             We take care of everything—from building custom CRM systems tailored
             to your needs, to automating your outreach with precision and care.
             Our proactive approach ensures that your campaigns are continuously
             optimized for maximum impact, so you can focus on what you do best:
             growing your business.
           </p>
-          <p className="mb-12 text-center text-2xl font-normal leading-loose tracking-widest">
+          <p className="mb-4 text-center text-base font-normal leading-loose tracking-widest sm:mb-6 sm:text-lg md:mb-8 md:text-lg lg:mb-12 lg:text-2xl">
             With FutureLeads, you&apos;re not just getting a tool; you&apos;re
             gaining a strategic partner dedicated to driving your success
             through intelligent automation and data-driven insights. Experience
@@ -216,7 +216,7 @@ function MainContent() {
 
       <section className="mt-36 flex w-screen flex-col items-center justify-center">
         <div className="flex flex-col items-center justify-center">
-          <h2 className="stroke-[#6BD762] text-center text-5xl font-extrabold leading-relaxed">
+          <h2 className="stroke-[#6BD762] text-center text-3xl font-extrabold leading-relaxed sm:text-4xl md:text-5xl lg:text-6xl">
             <p className="">Automate Your Social </p>
             <p>Media Outreach</p>
           </h2>
@@ -227,22 +227,22 @@ function MainContent() {
       </section>
 
       <section className="mt-36 flex w-screen flex-col items-center justify-center">
-        <div className="flex flex-col border border-solid border-white px-8 py-14 md:flex-row">
-          <div className="basis-9/12">
-            <h4 className="text-4xl font-bold leading-loose">
+        <div className="mx-5 flex flex-col gap-5 border border-solid border-white px-6 pl-8 pt-10 md:flex-row md:py-12">
+          <div className="basis-2/3">
+            <h4 className="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
               Transforming Email Outreach with AI
             </h4>
-            <p className="text-xl font-normal">
+            <p className="mt-2 text-base font-normal sm:text-lg md:text-xl lg:text-2xl">
               Experience the power of personalized email outreach
             </p>
           </div>
-          <div className="flex flex-col justify-center">
+          <div className="mt-4 flex basis-1/3 flex-col justify-center">
             <FormComponent />
           </div>
         </div>
       </section>
 
-      <section className="mt-36 flex w-screen flex-col items-center justify-center px-24">
+      <section className="mt-36 flex w-screen flex-col items-center justify-center px-3 md:px-24">
         <FooterComponent />
       </section>
     </main>
