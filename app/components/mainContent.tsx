@@ -186,7 +186,7 @@ function MainContent() {
       </section>
 
       <section className="mt-36 flex w-screen justify-center">
-        <div className="flex flex-col items-center justify-center border-opacity-50 bg-transparent px-5 sm:px-16 md:mx-24 md:border md:border-solid md:px-32">
+        <div className="flex flex-col items-center justify-center border-opacity-30 bg-transparent px-5 sm:px-16 md:mx-24 md:border md:border-solid md:px-32 lg:w-[50%]">
           <h2 className="mb-5 mt-12 text-3xl font-semibold sm:text-4xl md:text-5xl lg:text-6xl">
             About <span className="text-[#65CCF8]">FutureLeads</span>
           </h2>
