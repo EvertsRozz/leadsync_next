@@ -24,7 +24,7 @@ function PricingComponentPlan(props: I_pricingComponentPlan) {
             height={20}
             alt="Check-mark"
             src={CheckMarkSvg}
-            className="mr-5"
+            className="mr-2 sm:mr-5"
           />
           <p
             className="text-sm font-normal"
@@ -41,7 +41,7 @@ function PricingComponentPlan(props: I_pricingComponentPlan) {
       return (
         <div className="my-5 flex flex-row" key={index}>
           <Image
-            className="mr-5"
+            className="mr-2 md:mr-5"
             width={16}
             height={20}
             alt="Check-mark"

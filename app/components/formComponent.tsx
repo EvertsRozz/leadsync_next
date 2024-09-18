@@ -18,7 +18,7 @@ export default function FormComponent() {
           />
           <button
             type="button"
-            className="w-full basis-1/3 rounded-md border border-solid border-white"
+            className="w-full basis-1/3 text-nowrap rounded-md border border-solid border-white"
             onMouseDown={SubmitBtn}
           >
             Sign Up

@@ -11,7 +11,7 @@ function CustomBtn(props: I_customBtn) {
     <button
       type="button"
       style={{ backgroundColor: `#${props.customBtnColorHex}` }}
-      className={`max-h-[32px] w-28 basis-1/2 self-end rounded-lg p-2 text-xs font-medium text-white md:max-h-[44px] md:w-40 md:text-lg`}
+      className={`max-h-[32px] w-28 basis-1/2 self-end text-nowrap rounded-lg p-2 text-xs font-medium text-white md:max-h-[44px] md:w-40 md:text-base`}
       onMouseDown={() => console.log("button pressed c")}
     >
       {props.customBtnText}

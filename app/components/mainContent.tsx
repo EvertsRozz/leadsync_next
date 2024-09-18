@@ -121,12 +121,12 @@ function MainContent() {
 
       <section className="mt-36 w-screen">
         <div className="flex justify-center">
-          <h2 className="text-3xl font-semibold sm:text-6xl">
+          <h2 className="text-center text-3xl font-semibold sm:text-4xl md:text-5xl lg:text-6xl">
             How <span className="text-[#65CCF8]">FutureLeads</span> works
           </h2>
         </div>
 
-        <div className="mx-12 mt-10 grid h-fit grid-cols-2 gap-8 md:mx-12 md:mt-24 md:flex">
+        <div className="mx-2 mt-10 grid h-fit grid-cols-2 gap-8 md:mx-12 md:mt-24 md:flex">
           <StepCard
             ImageSrc={Step1Svg}
             header="Step 1"
@@ -155,12 +155,14 @@ function MainContent() {
       </section>
 
       <section className="mt-36 flex w-screen flex-col items-center justify-center">
-        <div className="mb-20 flex flex-col items-center justify-center px-12 text-center md:px-24">
-          <p className="text-2xl font-semibold">Unlock the Power</p>
-          <h2 className="my-5 text-5xl font-bold md:my-8">
+        <div className="mb-10 flex flex-col items-center justify-center px-12 text-center md:mb-20 md:px-24">
+          <p className="text-lg font-semibold sm:text-xl md:text-2xl lg:text-3xl">
+            Unlock the Power
+          </p>
+          <h2 className="mb-5 text-3xl font-bold sm:text-4xl md:my-8 md:text-5xl lg:text-6xl">
             Automate Your Email Outreach
           </h2>
-          <p className="text-xl font-semibold text-[#797979]">
+          <p className="text-base font-semibold text-[#797979] md:text-lg lg:text-xl">
             Our AI Agency creates personalized automatic email outreach.
           </p>
         </div>
@@ -172,12 +174,14 @@ function MainContent() {
 
       {/* this section seems to have changed since yesterday */}
       <section className="mt-16 w-screen md:mt-32">
-        <div className="flex flex-col justify-center px-12 text-center md:mb-20 md:px-24">
-          <p className="text-2xl font-semibold">Personalized</p>
-          <h2 className="mb-5 mt-2 text-5xl font-bold md:my-8">
+        <div className="mb-10 flex flex-col items-center justify-center px-12 text-center md:mb-20 md:px-24">
+          <p className="text-lg font-semibold sm:text-xl md:text-2xl lg:text-3xl">
+            Personalized
+          </p>
+          <h2 className="mb-5 text-3xl font-bold sm:text-4xl md:my-8 md:text-5xl lg:text-6xl">
             Affordable Pricing
           </h2>
-          <p className="text-xl font-semibold text-[#797979]">
+          <p className="text-base font-semibold text-[#797979] md:text-lg lg:text-xl">
             Our AI-driven email outreach service automates personalized email
             campaigns to boost your sales.
           </p>
@@ -187,7 +191,7 @@ function MainContent() {
 
       <section className="mt-36 flex w-screen justify-center">
         <div className="flex flex-col items-center justify-center border-opacity-30 bg-transparent px-5 sm:px-16 md:mx-24 md:border md:border-solid md:px-32 lg:w-[50%]">
-          <h2 className="mb-5 mt-12 text-3xl font-semibold sm:text-4xl md:text-5xl lg:text-6xl">
+          <h2 className="mb-5 mt-12 text-center text-3xl font-semibold sm:text-4xl md:text-5xl lg:text-6xl">
             About <span className="text-[#65CCF8]">FutureLeads</span>
           </h2>
           <p className="mb-4 text-center text-base font-normal leading-loose tracking-widest sm:mb-6 sm:text-lg md:mb-8 md:text-xl lg:mb-12 lg:text-2xl">
