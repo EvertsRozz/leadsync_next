@@ -126,7 +126,7 @@ function MainContent() {
           </h2>
         </div>
 
-        <div className="mx-2 mt-10 grid h-fit grid-cols-2 gap-8 md:mx-12 md:mt-24 md:flex">
+        <div className="mx-2 mt-10 grid h-fit grid-cols-2 gap-4 md:mx-12 md:mt-24 md:flex md:gap-8">
           <StepCard
             ImageSrc={Step1Svg}
             header="Step 1"
@@ -172,7 +172,6 @@ function MainContent() {
         </div>
       </section>
 
-      {/* this section seems to have changed since yesterday */}
       <section className="mt-16 w-screen md:mt-32">
         <div className="mb-10 flex flex-col items-center justify-center px-12 text-center md:mb-20 md:px-24">
           <p className="text-lg font-semibold sm:text-xl md:text-2xl lg:text-3xl">
