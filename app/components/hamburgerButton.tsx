@@ -6,12 +6,7 @@ export default function HamburgerButton() {
   return (
     <div className="relative">
       {/* Checkbox (Peer element) */}
-      <input
-        type="checkbox"
-        id="menu-toggle"
-        className="peer hidden"
-        onMouseDown={() => console.log("skibidi")}
-      />
+      <input type="checkbox" id="menu-toggle" className="peer hidden" />
 
       {/* Hamburger Button */}
       <label htmlFor="menu-toggle" className="group relative cursor-pointer">
@@ -31,7 +26,7 @@ export default function HamburgerButton() {
       </label>
 
       {/* Dropdown Menu */}
-      <div className="peer-not-checked:translate-y-[-10px] peer-not-checked:opacity-0 absolute right-0 top-[120%] mt-2 h-96 w-52 translate-y-[-10px] rounded-3xl bg-white opacity-0 shadow-lg transition-all duration-300 peer-checked:translate-y-0 peer-checked:opacity-100">
+      <div className="absolute right-0 top-[120%] mt-2 h-96 w-52 translate-y-[-10px] rounded-3xl bg-white opacity-0 shadow-lg transition-all duration-300 peer-checked:translate-y-0 peer-checked:opacity-100">
         <menu className="space-y-2 p-4 text-black">
           <li>lorem</li>
           <li>lorem</li>
