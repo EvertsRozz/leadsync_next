@@ -1,5 +1,8 @@
 {
   "diffEditor.codeLens": false,
   "editor.minimap.enabled": false,
-  "editor.minimap.autohide": true
+  "editor.minimap.autohide": true,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 80,
+  "chat.editor.wordWrap": "on"
 }
