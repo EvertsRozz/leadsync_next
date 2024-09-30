@@ -1,6 +1,6 @@
 import Btn from "./Btn";
 import CircleBtn from "./CircleBtn";
-import KeyFeaturesCard from "./KeyFeaturesCard";
+import KeyFeaturesList from "./KeyFeaturesList";
 /**
  * @description
  * Default Tailwind units for the landing page are as follows:
@@ -17,33 +17,6 @@ import KeyFeaturesCard from "./KeyFeaturesCard";
  *
  */
 export default function LandingPage() {
-  const keyFeaturesCards = [
-    {
-      title: "AI-Powered Email Outreach",
-      text: "Imagine sending thousands of personalized emails every day, tailored to each lead's behavior, interests, and business needs—all without lifting a finger.",
-    },
-    {
-      title: "AI Chatbots for Instant Engagement",
-      text: "Chatbots that are always awake. Our AI chatbots engage with leads on your website or social media, answering their questions, guiding them through product demos, and capturing vital information to fuel your sales pipeline. ",
-    },
-    {
-      title: "AI Voice Agents",
-      text: "More than just text-based outreach. With AI voice agents, you can offer real-time, conversational experiences that feel personal. These agents handle tasks like customer follow-ups, demo scheduling, or gathering lead data, all through natural voice interactions.",
-    },
-    {
-      title: "AI Social Media Outreach",
-      text: "Don’t just engage—create relationships. Automate your interactions on social media platforms like LinkedIn, WhatsApp, Telegram, Instagram, and X.",
-    },
-    {
-      title: "E-Commerce Integration",
-      text: "Bring your customers closer to purchase. Now integrated with e-commerce platforms like Shopify and WooCommerce, FutureLeads personalizes product recommendations based on each customer’s shopping behavior.",
-    },
-    {
-      title: "More Features",
-      text: "Dive into our features and see how they can transform your outreach—effortlessly. Click below to explore more and take your engagement to the next level!",
-    },
-  ];
-
   return (
     <>
       <section className="flex flex-col items-center 2xl:mx-52 2xl:my-20">
@@ -140,11 +113,7 @@ export default function LandingPage() {
         <h2 className="max-w-[30ch] font-bold tracking-wide 2xl:my-5 2xl:text-4xl">
           Discover the Key Features that Make FutureLeads a Game-Changer
         </h2>
-        <div className="grid 2xl:mt-10 2xl:grid-cols-3 2xl:grid-rows-2 2xl:gap-5">
-          {keyFeaturesCards.map((card, index) => (
-            <KeyFeaturesCard key={index} title={card.title} text={card.text} />
-          ))}
-        </div>
+        <KeyFeaturesList />
       </section>
     </>
   );
