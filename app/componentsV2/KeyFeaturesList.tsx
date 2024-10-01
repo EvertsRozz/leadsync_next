@@ -31,7 +31,7 @@ export default function KeyFeaturesList() {
   ];
 
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
-  //   const listeners = useRef<((e: PointerEvent) => void)[]>([]);
+  const listeners = useRef<((e: PointerEvent) => void)[]>([]);
 
   function applyOverlayMask(e: PointerEvent, index: number) {
     const card = cardRefs.current[index];

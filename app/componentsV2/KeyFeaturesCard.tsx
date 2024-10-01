@@ -13,7 +13,7 @@ export default function KeyFeaturesCard(props: KeyFeaturesCardProps) {
     <>
       <div className="relative h-full">
         {/* main card */}
-        <div className="flex h-full flex-col rounded-lg border-2 border-transparent bg-indigo-950 text-left tracking-wide transition-colors 2xl:p-5">
+        <div className="flex h-full flex-col rounded-lg border-2 border-white border-opacity-10 text-left tracking-wide transition-colors 2xl:p-5">
           <div className="flex items-center justify-center rounded-full bg-white 2xl:h-8 2xl:w-8">
             <Image src={GearSvg} width={20} height={20} alt="" />
           </div>
