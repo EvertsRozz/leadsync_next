@@ -16,7 +16,7 @@ export default function HowItWorksCard(props: HowItWorksCardProps) {
         <Image src={ChromeSvg} height={48} width={48} alt="" />
         <div className="2xl:my-4">
           <h3 className="text-center font-bold 2xl:text-xl">{props.title}</h3>
-          <p className="2xl:text-base">{props.text}</p>
+          <p className="tracking-wide 2xl:text-base">{props.text}</p>
         </div>
         <div className="mt-auto">
           <Btn text={props.btnText} outline={false} />

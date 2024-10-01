@@ -156,6 +156,35 @@ export default function LandingPage() {
           ))}
         </div>
       </section>
+
+      <section className="flex flex-col items-center justify-center text-center 2xl:mx-52 2xl:my-20">
+        <div className="flex basis-1/2 items-center justify-center 2xl:mb-10 2xl:flex-row">
+          <h2 className="max-w-[30ch] text-left font-bold tracking-wide 2xl:text-4xl">
+            FutureLeads brings AI innovation to your sales strategy
+          </h2>
+          <p className="max-w-[40ch] text-left tracking-wide opacity-40 2xl:text-xl">
+            Boosting results and freeing up time to focus on what matters
+            most—building relationships.
+          </p>
+        </div>
+        <div className="w-full 2xl:grid 2xl:grid-cols-4 2xl:grid-rows-2 2xl:gap-5">
+          <div className="col-span-2 rounded-lg border-2 border-white border-opacity-10 bg-indigo-950 bg-opacity-80">
+            1
+          </div>
+          <div className="rounded-lg border-2 border-white border-opacity-10 bg-indigo-950 bg-opacity-80">
+            2
+          </div>
+          <div className="row-span-2 rounded-lg border-2 border-white border-opacity-10 bg-indigo-950 bg-opacity-80 2xl:min-h-[500px]">
+            3
+          </div>
+          <div className="rounded-lg border-2 border-white border-opacity-10 bg-indigo-950 bg-opacity-80">
+            4
+          </div>
+          <div className="col-span-2 rounded-lg border-2 border-white border-opacity-10 bg-indigo-950 bg-opacity-80">
+            5
+          </div>
+        </div>
+      </section>
     </>
   );
 }
